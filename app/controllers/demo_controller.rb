@@ -1,9 +1,11 @@
 class DemoController < ApplicationController
     def index
-        render ('hello')
+        
     end
     
     def hello
+        @id = params['id']
+        @page = params[:page]
     end
     
     def other_hello
