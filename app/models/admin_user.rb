@@ -5,4 +5,5 @@ class AdminUser < ActiveRecord::Base
 #    as well as this file name from user.rb to admin_user.rb
     
     has_and_belongs_to_many :pages
+    has_many :section_edits
 end
