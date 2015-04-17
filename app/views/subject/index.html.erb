@@ -1,9 +1,9 @@
 <div class="subjects index">
     <h2>Subjects</h2>
     
-    <%= link_to("Add New Subject", '#', :class => 'action new') %>
+    <%= link_to("Add New Subject", {:action => 'new'}, :class => 'action new') %>
     
-    <table class="listing" sunnary="Subject list">
+    <table class="listing">
         <tr>
             <th>&nbsp;</th>
             <th>Subject</th>
