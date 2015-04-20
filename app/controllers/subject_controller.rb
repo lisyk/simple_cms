@@ -1,6 +1,6 @@
 class SubjectController < ApplicationController
   
-    layout false
+    layout 'admin'
     
   def index
       @subjects=Subject.sorted #sorted was defined before in model/subject/scope
