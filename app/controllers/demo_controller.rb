@@ -19,4 +19,8 @@ class DemoController < ApplicationController
         #external link for redirection
         redirect_to("http://lynda.com")
     end
+    
+    def text_helpers
+        
+    end
 end
