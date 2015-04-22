@@ -8,3 +8,9 @@
 <%= link_to('rails link to hello page', {:action => 'hello'}) %><br />
 
 <%= link_to('rails link to hello page', {:action => 'hello', :id =>5, :page => 25}) %>
+
+<hr>
+
+<%= link_to('Roar', '#', :onclick => "jsRoar('JavaScript'); return true;") %>
+
+<%= javascript_tag("jsRoar('Rails');") %>
