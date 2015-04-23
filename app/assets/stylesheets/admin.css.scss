@@ -102,9 +102,9 @@ span.status {
 }
 
 /* Errors */
-.fieldWithErrors {
+.field_with_errors {
     label {color: #aa0000;}
-    input { }
+    input { border: 1px solid #aa0000;}
 }
 
 #errorExplanation {
