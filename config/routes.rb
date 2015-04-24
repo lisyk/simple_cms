@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   root 'demo#index'
     
-    match '/:controller(/:action(/:id))', :via => [:get, :post] #!!!! need to be very last!!!
+  get 'admin' => "access#index"
+    
+
+  match '/:controller(/:action(/:id))', :via => [:get, :post] #!!!! need to be very last!!!
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

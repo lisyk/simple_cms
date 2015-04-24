@@ -23,6 +23,7 @@ class PagesController < ApplicationController
           redirect_to(:action => 'index')
       else
           @page_count=Page.count + 1
+          @subjects=Subject.order('position ASC')
           render('new')
       end
   end
@@ -40,6 +41,7 @@ class PagesController < ApplicationController
           redirect_to(:action => 'show', :id => @page.id)
       else
           @page_count=Page.count
+          @subjects=Subject.order('position ASC')
           render('edit')
       end
   end
