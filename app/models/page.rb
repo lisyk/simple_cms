@@ -38,4 +38,6 @@ class Page < ActiveRecord::Base
 
       def delete_related_sections
         self.sections.each do |section|
+        end
+      end
 end
